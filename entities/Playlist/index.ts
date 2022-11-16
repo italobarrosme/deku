@@ -1,4 +1,4 @@
-import { Video } from '../entities/Video';
+import { Video } from '../Video';
 
 export class Playlist {
   name: string;
