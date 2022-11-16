@@ -1,4 +1,4 @@
-import  { Playlist } from './playlist'
+import  { Playlist } from './Playlist'
 
 export class User {
   id: string;

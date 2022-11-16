@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
-import { Playlist } from '../../../entities/playlist';
-import { User } from '../../../entities/user';
+import { Playlist } from '../../../entities/Playlist';
+import { User } from '../../../entities/User';
 
 // Fake users data
 export const dataBase = {
@@ -8,9 +8,16 @@ export const dataBase = {
     new User(
       Math.random().toString(36).slice(2, 7),
       new Playlist([], 'My Playlist'),
-      'Alexis',
+      'Alexa',
+      'https://i.pravatar.cc/?img=30',
+      'AI Engineer',
+    ),
+    new User(
+      Math.random().toString(36).slice(2, 7),
+      new Playlist([], 'My Playlist'),
+      'Peter Quill',
       'https://i.pravatar.cc/',
-      'Developer at Brazil'
+      'Star lord'
     )
   ]
 };
